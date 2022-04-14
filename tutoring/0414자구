@@ -1,0 +1,43 @@
+public INode(E data, BinNode<E> l, BinNode<E> r) {
+		this.data = data;
+		this.l=l;
+		this.r=r;
+	}
+	
+	
+	@Override
+	public E element() {
+		return data;
+	}
+
+	@Override
+	public E setElement(E item) {
+		return this.data = item;
+	}
+
+	@Override
+	public BinNode left() {
+		return l;
+	}
+
+	@Override
+	public BinNode right() {	
+		return r;
+	}
+
+	@Override
+	public boolean isLeaf() {
+		return l== null && r ==null;
+	}
+
+	@Override
+	public Object setElement(Object item) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object setElement(Object item) {
+		// TODO Auto-generated method stub
+		return null;
+	}
