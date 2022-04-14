@@ -20,10 +20,8 @@ int main(){
             for(int j=0;j<m-s;j++) // '' (j+s<n)
                 if(arr[i][j]==arr[i][j+s]&&arr[i][j+s]==arr[i+s][j]){
                     cout << l*l << endl;
-                    goto EXIT; // 중첩루프 전부 빠져나오기
+                    return 0; // 중첩루프 전부 빠져나오기
                 }
                 
     }
-EXIT :
-    return 0;
 }
